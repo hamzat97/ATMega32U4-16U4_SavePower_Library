@@ -10,7 +10,7 @@ Chips Supported:
 - ATMega32U4
 - ATMega16U4
 
-Save Power Library is developed using ATMega32U4/16U4 Datasheet (click here). Also, it has been tested and verified successfully with Arduino IDE 1.8.8 release.
+Save Power Library is developed using ATMega32U4/16U4 Datasheet ([click here](http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf)). Also, it has been tested and verified successfully with Arduino IDE 1.8.8 release.
 
 ***Important Note:*** Try to not miss to read carefully the long description in SavePower.cpp file cause it's the key to understand everything and know how things work clearly. I'm sure that will make you so excited to know more about the world of microcontrollers.
 
