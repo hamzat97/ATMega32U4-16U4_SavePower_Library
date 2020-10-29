@@ -8,8 +8,8 @@ class SavePowerClass
 {
 	public:
 		#if defined (__AVR_ATmega32U4__) || defined (__AVR_ATmega16U4__) 
-		    void  DivideClockSpeed(int Clock_Division_Factor);
-		    void  IdleMode(Time_Out_Value time);		          
+		        void  DivideClockSpeed(int Clock_Division_Factor);
+		        void  IdleMode(Time_Out_Value time);		          
 			void  ADCNoiseReductionMode(Time_Out_Value time);
 			void  PowerDownMode(Time_Out_Value time);
 			void  PowerSaveMode(Time_Out_Value time);
@@ -44,5 +44,3 @@ class SavePowerClass
 };
 
 extern SavePowerClass SavePower;
-
-#endif
