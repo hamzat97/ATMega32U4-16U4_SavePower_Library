@@ -11,7 +11,7 @@
 
 /***********************************************************************************************************************************************
 ATMega32u4/16u4 enable the application to shut down unused modules in the MCU in order to reduce power consumption and extend the lifespan 
-of energy sources. In general, the AVR provides various sleep modes allowing the user to tailor the power consumption to the application’s
+of energy sources. In general, the AVR provides various sleep modes allowing the user to tailor the power consumption to the applicationâ€™s
 requirements. For the systems based on ATMega32u4/16u4, we can make the MCU enter six sleep modes using Sleep Mode Control Register SMCR. 
 
 Sleep Mode  	                   Description
@@ -132,63 +132,63 @@ WDTCSR    |  WDIF  |  WDIE  |  WDP3  |  WDCE  |  WDE  |  WDP2  |  WDP1  |  WDP0 
  // Clock Division Factor = 2
  #ifndef DivideClockSpeedByTwo          
   #define DivideClockSpeedByTwo() {   \
-  	 CLKPR = 0x81;                    \
+  	 CLKPR = 0x81;                \
   } 									
  #endif
  
  // Clock Division Factor = 4
  #ifndef DivideClockSpeedByFour          
   #define DivideClockSpeedByFour() {   \
-  	 CLKPR = 0x82;                     \
+  	 CLKPR = 0x82;                 \
   } 									
  #endif
  
  // Clock Division Factor = 8
  #ifndef DivideClockSpeedByEight          
   #define DivideClockSpeedByEight() {   \
-  	 CLKPR = 0x83;                      \
+  	 CLKPR = 0x83;                  \
   } 									
  #endif
  
  // Clock Division Factor = 16
  #ifndef DivideClockSpeedBySixteen          
   #define DivideClockSpeedBySixteen() {   \
-  	 CLKPR = 0x84;                        \
+  	 CLKPR = 0x84;                    \
   } 									
  #endif
 
  // Clock Division Factor = 32
  #ifndef DivideClockSpeedByThirtyTwo          
   #define DivideClockSpeedByThirtyTwo() {   \
-  	 CLKPR = 0x85;                          \
+  	 CLKPR = 0x85;                      \
   } 									
  #endif
  
  // Clock Division Factor = 64
  #ifndef DivideClockSpeedBySixtyFour          
   #define DivideClockSpeedBySixtyFour() {   \
-  	 CLKPR = 0x86;                          \
+  	 CLKPR = 0x86;                      \
   } 									
  #endif 
  
  // Clock Division Factor = 128
  #ifndef DivideClockSpeedByOneHundredTwentyEight          
   #define DivideClockSpeedByOneHundredTwentyEight() {   \
-  	 CLKPR = 0x87;                                      \
+  	 CLKPR = 0x87;                                  \
   } 									
  #endif
  
  // Clock Division Factor = 256 
  #ifndef DivideClockSpeedByTwoHundredFiftySix          
   #define DivideClockSpeedByTwoHundredFiftySix() {   \
-  	 CLKPR = 0x88;                                   \
+  	 CLKPR = 0x88;                               \
   } 									
  #endif
  
  // Default State (8 MHz)
  #ifndef ClockSpeedDefaultState          
   #define ClockSpeedDefaultState() {   \
-  	 CLKPR = 0x00;                     \
+  	 CLKPR = 0x00;                 \
   } 									
  #endif
  
@@ -199,13 +199,13 @@ WDTCSR    |  WDIF  |  WDIE  |  WDP3  |  WDCE  |  WDE  |  WDP2  |  WDP1  |  WDP0 
  
  // Analog Comparator power reduction macros
  #ifndef disable_ac          
-  #define disable_ac() {   \
+  #define disable_ac() {       \
   	 ACSR |= (1 << ACD);   \
   } 									
  #endif
 
  #ifndef enable_ac          
-  #define enable_ac() {     \
+  #define enable_ac() {         \
   	 ACSR &= ~(1 << ACD);   \
   } 									
  #endif
@@ -217,14 +217,14 @@ WDTCSR    |  WDIF  |  WDIE  |  WDP3  |  WDCE  |  WDE  |  WDP2  |  WDP1  |  WDP0 
   
  #ifndef EnterSleepMode            
   #define EnterSleepMode(mode) {   \
-     do {   	 			       \
+     do {   	                   \
           set_sleep_mode(mode);    \
-          cli();			       \
-          sleep_enable();	       \
-          sei();				   \
-          sleep_cpu();		       \
+          cli();  	           \
+          sleep_enable();          \
+          sei();		   \
+          sleep_cpu();	           \
           sleep_disable();         \
-          sei();				   \
+          sei();		   \
         } while (0);	           \
   }	
  #endif		  					
