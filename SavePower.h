@@ -44,3 +44,5 @@ class SavePowerClass
 };
 
 extern SavePowerClass SavePower;
+
+#endif
