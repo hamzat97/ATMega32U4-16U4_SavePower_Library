@@ -14,4 +14,4 @@ Save Power Library is developed using ATMega32U4/16U4 Datasheet ([click here](ht
 
 ***Important Note:*** Try to not miss to read carefully the detailed description in SavePower.cpp file cause it's the key to understand everything and know how things work clearly. I'm sure that will make you so excited to know more about the world of microcontrollers.
 
-Finally, I remain at your entire disposal for any further information, just contact me at my academic mail h.taous@ump.ac.ma if you have any questions or if you need any kind of assistance.
+Finally, I remain at your entire disposal for any further information, just contact me at my personal Gmail hamzataous847@gmail.com if you have any questions or if you need any kind of assistance.
